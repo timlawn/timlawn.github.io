@@ -4,54 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tim Lawn - Neuroscience Research</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #fafafa;
         }
-        nav {
-            background: white;
-            padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: sticky;
+        .top-nav {
+            background: #2F3542;
+            padding: 1.5rem;
+            position: fixed;
+            width: 100%;
             top: 0;
+            z-index: 1000;
         }
-        nav ul {
+        .top-nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
             display: flex;
-            justify-content: center;
-            gap: 2rem;
+            justify-content: flex-end;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 3rem;
         }
-        nav a {
+        .top-nav a {
             text-decoration: none;
-            color: #333;
+            color: white;
             font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+        }
+        .header {
+            background: #2ECC71;
+            color: white;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .header h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+        .header p {
+            font-size: 1.25rem;
+            margin: 1rem 0;
+            font-weight: 400;
+        }
+        .header-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        .header-divider::before,
+        .header-divider::after {
+            content: "";
+            height: 2px;
+            width: 2rem;
+            background: rgba(255,255,255,0.5);
+        }
+        .header-divider span {
+            font-size: 1.5rem;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem;
-        }
-        .hero {
-            text-align: center;
-            padding: 4rem 0;
-            background: white;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .hero img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-            object-fit: cover;
         }
         section {
             margin-bottom: 3rem;
@@ -59,11 +85,6 @@
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: #1a1a1a;
         }
         h2 {
             font-size: 1.8rem;
@@ -76,84 +97,58 @@
             display: flex;
             justify-content: center;
             gap: 1.5rem;
-            margin-top: 1rem;
+            margin-top: 2rem;
         }
         .social-links a {
-            color: #666;
+            color: white;
             text-decoration: none;
             padding: 0.5rem 1rem;
             border-radius: 4px;
             transition: background-color 0.2s;
+            background: rgba(255,255,255,0.1);
         }
         .social-links a:hover {
-            background-color: #f5f5f5;
+            background: rgba(255,255,255,0.2);
         }
         .publication {
             background: #f9f9f9;
             padding: 1rem;
             margin-bottom: 1rem;
             border-radius: 4px;
-            border-left: 3px solid #2a2a2a;
-        }
-        .featured-research {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        .research-item {
-            background: #f9f9f9;
-            padding: 1rem;
-            border-radius: 4px;
-            border-left: 3px solid #2a2a2a;
+            border-left: 3px solid #2ECC71;
         }
     </style>
 </head>
 <body>
-    <nav>
+    <nav class="top-nav">
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <section class="hero">
-            <img src="profile.jpg" alt="Tim Lawn">
-            <h1>Tim Lawn</h1>
-            <p>Postdoctoral Research Fellow • Harvard Medical School and MGH</p>
-            <div class="social-links">
-                <a href="mailto:tlawn1@mgh.harvard.edu">Email</a>
-                <a href="https://scholar.google.com/citations?user=1rsnZCMAAAAJ&hl=en">Google Scholar</a>
-                <a href="https://www.researchgate.net/">ResearchGate</a>
-                <a href="https://bsky.app/profile/timlawn.bsky.social">Bluesky</a>
-            </div>
-        </section>
+    <header class="header">
+        <h1>TIM LAWN</h1>
+        <div class="header-divider">
+            <span>•</span>
+        </div>
+        <p>Post-doctoral Research Fellow in Neuroimaging</p>
+        <p>Athinoula A. Martinos Center for Biomedical Imaging, Mass General Hospital & Harvard Medical School</p>
+        <div class="social-links">
+            <a href="mailto:tlawn1@mgh.harvard.edu">Email</a>
+            <a href="https://scholar.google.com/citations?user=1rsnZCMAAAAJ&hl=en">Google Scholar</a>
+            <a href="https://www.researchgate.net/">ResearchGate</a>
+            <a href="https://bsky.app/profile/timlawn.bsky.social">Bluesky</a>
+        </div>
+    </header>
 
+    <div class="container">
         <section id="about">
             <h2>About</h2>
-            <p>I am a postdoctoral research fellow at Harvard Medical School and MGH working within the Jacobs (Blue Spot) and Sepulcre labs. My present research focuses on imaging of brainstem nuclei using highly multi-modal and graph theoretic approaches to map the molecular and systems level mechanisms underlying resilience and heterogeneity in ageing.</p>
-            
             <p>I am deeply interested in all aspects of conscious perception and cognition, especially when investigated through the lens of pharmacological or pathophysiological disruption. Two of the most fundamental roles of science are to help us make sense of ourselves within the universe and help those trying to survive within it. I feel neuroscience is currently uniquely placed to do so given that consciousness remains one of the final frontiers of human understanding, and neuropsychiatric diseases remain amongst the most debilitating intractable conditions of the 21st century. Thus, in my research I endeavour to shed light on neural mechanisms underlying both health and disease to provide both conceptual and translational value.</p>
             
             <p>When I'm not doing neuroscience, thinking about neuroscience, or rambling about neuroscience at the pub, you can probably find me climbing, tinkering with my motorbike, or off on some backpacking adventure.</p>
-        </section>
-
-        <section id="research">
-            <h2>Research Interests</h2>
-            <p><em>One of the greatest challenges facing neuroscientists today is that the ratio of fascinating areas of research to a given individual's available time is maddeningly numerator heavy. As such, this is by no means an exhaustive list of my academic interests, but rather those which I've had the good fortune to engage with thus far.</em></p>
-            <div class="featured-research">
-                <div class="research-item">
-                    <h3>Molecular Brain Imaging</h3>
-                    <p>Investigating molecular and systems level mechanisms in aging and consciousness</p>
-                </div>
-                <div class="research-item">
-                    <h3>Pain Research</h3>
-                    <p>Studying pain mechanisms and developing the Keystone Mechanism Theory of Pain</p>
-                </div>
-            </div>
         </section>
 
         <section id="publications">
@@ -177,8 +172,8 @@
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Harvard Medical School<br>
-            Massachusetts General Hospital<br>
+            <p>Athinoula A. Martinos Center for Biomedical Imaging<br>
+            Massachusetts General Hospital & Harvard Medical School<br>
             Boston, MA</p>
             <p>Email: tlawn1@mgh.harvard.edu</p>
         </section>
