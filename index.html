@@ -4,24 +4,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tim Lawn - Neuroscience Research</title>
-    <!-- Include Bootstrap CSS from CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <!-- Custom styles -->
     <style>
         :root {
-            --bs-primary: #2C3E50;
-            --bs-secondary: #1a365d;
+            /* Color Option 1 - Deep Navy */
+            --bs-primary: #1B2845;
+            --bs-secondary: #2C5282;
+            
+            /* Uncomment to try other colors:
+            /* Color Option 2 - Rich Blue */
+            /*
+            --bs-primary: #102A43;
+            --bs-secondary: #334E68;
+            */
+            
+            /* Color Option 3 - Slate Blue */
+            /*
+            --bs-primary: #2C5282;
+            --bs-secondary: #2D3748;
+            */
+            
+            /* Color Option 4 - Midnight Blue */
+            /*
+            --bs-primary: #0A192F;
+            --bs-secondary: #172A45;
+            */
         }
         
-        .bg-primary {
-            background-color: var(--bs-primary) !important;
-        }
+        .bg-primary { background-color: var(--bs-primary) !important; }
+        .bg-secondary { background-color: var(--bs-secondary) !important; }
         
         .navbar-custom {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+            padding: 1rem;
             background-color: var(--bs-primary);
         }
         
@@ -33,17 +48,20 @@
             padding-top: calc(6rem + 74px);
             padding-bottom: 6rem;
             text-align: center;
-            background-color: var(--bs-secondary);
+            background-color: var(--bs-primary);
             color: white;
         }
         
-        .masthead .masthead-heading {
-            font-size: 2.75rem;
-            line-height: 2.75rem;
+        .masthead-heading {
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+            letter-spacing: 0.1em;
+            font-weight: 700;
         }
         
-        .masthead .masthead-subheading {
+        .masthead-subheading {
             font-size: 1.25rem;
+            line-height: 1.5;
         }
         
         .divider-custom {
@@ -54,26 +72,18 @@
             align-items: center;
         }
         
-        .divider-custom .divider-custom-line {
+        .divider-custom-line {
             width: 100%;
             max-width: 7rem;
             height: 0.25rem;
             background-color: #fff;
             border-radius: 1rem;
-            border-color: #fff;
         }
         
-        .divider-custom .divider-custom-icon {
+        .divider-custom-icon {
             margin: 0 1rem;
             color: #fff;
-        }
-        
-        .divider-custom.divider-light .divider-custom-line {
-            background-color: #fff;
-        }
-        
-        .divider-custom.divider-light .divider-custom-icon {
-            color: #fff;
+            font-size: 1.5rem;
         }
 
         .publication-item {
@@ -82,36 +92,46 @@
             border-left: 4px solid var(--bs-secondary);
             background: #f8f9fa;
             border-radius: 0.25rem;
+            transition: transform 0.2s;
         }
 
-        .media-item {
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-left: 4px solid var(--bs-secondary);
-            background: #f8f9fa;
-            border-radius: 0.25rem;
+        .publication-item:hover {
+            transform: translateX(5px);
         }
 
-        .scholar-button {
-            background: var(--bs-secondary);
+        .publication-item h4 {
+            color: var(--bs-primary);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .bio-section {
+            background-color: #f8f9fa;
+            padding: 4rem 0;
+            margin-top: 2rem;
+        }
+
+        .social-links {
+            margin-top: 2rem;
+        }
+
+        .social-links a {
             color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.25rem;
             text-decoration: none;
-            display: inline-block;
-            margin-top: 1rem;
+            padding: 0.5rem;
+            margin: 0 0.5rem;
+            border-radius: 50%;
+            transition: background-color 0.2s;
         }
 
-        .scholar-button:hover {
-            background: var(--bs-primary);
-            color: white;
+        .social-links a:hover {
+            background: rgba(255,255,255,0.1);
         }
 
         footer {
-            padding: 4rem 0;
-            color: white;
-            text-align: center;
             background-color: var(--bs-primary);
+            color: white;
+            padding: 4rem 0;
         }
     </style>
 </head>
@@ -125,7 +145,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
                     <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="#media">Media</a></li>
                 </ul>
@@ -136,26 +157,26 @@
     <!-- Masthead-->
     <header class="masthead text-white text-center">
         <div class="container">
-            <img class="img-fluid mb-5" src="headshot.jpeg" alt="Tim Lawn" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
-            <h1 class="masthead-heading mb-0">TIM LAWN</h1>
+            <h1 class="masthead-heading mb-0" style="font-size: 4.5rem; letter-spacing: 0.05em;">TIM LAWN</h1>
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">•</div>
+                <div class="divider-custom-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
                 <div class="divider-custom-line"></div>
             </div>
-            <p class="masthead-subheading mb-0">Post-doctoral Research Fellow in Neuroimaging</p>
-            <p class="masthead-subheading">Athinoula A. Martinos Center for Biomedical Imaging, Mass General Hospital & Harvard Medical School</p>
+            <p class="masthead-subheading mb-3" style="font-size: 1.6rem; font-weight: 300;">Post-doctoral Research Fellow in Neuroimaging</p>
+            <p class="masthead-subheading" style="font-size: 1.2rem; max-width: 100%; margin: 0 auto; opacity: 0.9; white-space: nowrap;">Athinoula A. Martinos Center for Biomedical Imaging | Mass General Hospital | Harvard Medical School</p>
         </div>
     </header>
 
-    <!-- About Section-->
-    <section class="page-section" id="about">
+    <!-- Research Section-->
+    <section class="page-section" id="research">
         <div class="container">
-            <h2 class="text-center mb-5">About</h2>
+            <h2 class="text-center mb-5">RESEARCH</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <p>I am deeply interested in all aspects of conscious perception and cognition, especially when investigated through the lens of pharmacological or pathophysiological disruption. Two of the most fundamental roles of science are to help us make sense of ourselves within the universe and help those trying to survive within it. I feel neuroscience is currently uniquely placed to do so given that consciousness remains one of the final frontiers of human understanding, and neuropsychiatric diseases remain amongst the most debilitating intractable conditions of the 21st century. Thus, in my research I endeavour to shed light on neural mechanisms underlying both health and disease to provide both conceptual and translational value.</p>
-                    <p>When I'm not doing neuroscience, thinking about neuroscience, or rambling about neuroscience at the pub, you can probably find me climbing, tinkering with my motorbike, or off on some backpacking adventure.</p>
+                    <p class="text-center">I am interested in how the brain's neuromodulatory systems shape cognition, how this is altered by pathology, and how we can intervene in these processes with precision medicine. My work focuses on multi-modal and brainstem imaging approaches to characterize brain function across scales, linking neurotransmitter systems through to systems level dysfunction in psychiatric disorders such as Alzheimer's disease.</p>
                 </div>
             </div>
         </div>
@@ -168,7 +189,7 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <div class="publication-item">
-                        <h4>"Normative modelling of molecular-based functional circuits captures clinical heterogeneity transdiagnostically in psychiatric patients"</h4>
+                        <h4>Normative modelling of molecular-based functional circuits captures clinical heterogeneity transdiagnostically in psychiatric patients</h4>
                         <p><strong style="color: var(--bs-secondary)">Timothy Lawn</strong>, Alessio Giacomel, Daniel Martins, Mattia Veronese, Matthew Howard, Federico E. Turkheimer & Ottavia Dipasquale (2024). Communications Biology.</p>
                         <div class="pub-links">
                             <a href="/papers/paper1.pdf" class="btn btn-sm btn-outline-secondary"><i class="fas fa-file-pdf"></i> PDF</a>
@@ -177,7 +198,7 @@
                     </div>
 
                     <div class="publication-item">
-                        <h4>"Beyond biopsychosocial: The keystone mechanism theory of pain"</h4>
+                        <h4>Beyond biopsychosocial: The keystone mechanism theory of pain</h4>
                         <p><strong style="color: var(--bs-secondary)">Timothy Lawn</strong>, Manon Sendel, Ralf Baron, Jan Vollert et al. (2023). Brain, Behaviour, and Immunity.</p>
                         <div class="pub-links">
                             <a href="/papers/paper2.pdf" class="btn btn-sm btn-outline-secondary"><i class="fas fa-file-pdf"></i> PDF</a>
@@ -186,7 +207,7 @@
                     </div>
 
                     <div class="publication-item">
-                        <h4>"From neurotransmitters to networks: Transcending organisational hierarchies with molecular-informed functional imaging"</h4>
+                        <h4>From neurotransmitters to networks: Transcending organisational hierarchies with molecular-informed functional imaging</h4>
                         <p><strong style="color: var(--bs-secondary)">Timothy Lawn</strong>, Matthew A. Howard, Federico Turkheimer, Bratislav Misic, Gustavo Deco, Daniel Martins, Ottavia Dipasquale (2023). Neuroscience and Biobehavioral Reviews.</p>
                         <div class="pub-links">
                             <a href="/papers/paper3.pdf" class="btn btn-sm btn-outline-secondary"><i class="fas fa-file-pdf"></i> PDF</a>
@@ -195,7 +216,7 @@
                     </div>
 
                     <div class="publication-item">
-                        <h4>"Differential contributions of serotonergic and dopaminergic functional connectivity to the phenomenology of LSD"</h4>
+                        <h4>Differential contributions of serotonergic and dopaminergic functional connectivity to the phenomenology of LSD</h4>
                         <p><strong style="color: var(--bs-secondary)">Timothy Lawn</strong>, Ottavia Dipasquale, Alexandros Vamvakas, Ioannis Tsougos, Mitul A. Mehta & Matthew A. Howard (2022). Psychopharmacology.</p>
                         <div class="pub-links">
                             <a href="/papers/paper4.pdf" class="btn btn-sm btn-outline-secondary"><i class="fas fa-file-pdf"></i> PDF</a>
@@ -204,7 +225,7 @@
                     </div>
 
                     <div class="text-center mt-5">
-                        <a href="https://scholar.google.com/citations?user=1rsnZCMAAAAJ&hl=en" class="scholar-button">
+                        <a href="https://scholar.google.com/citations?user=1rsnZCMAAAAJ&hl=en" class="publication-button">
                             <i class="fas fa-graduation-cap me-2"></i>See all publications
                         </a>
                     </div>
@@ -214,23 +235,43 @@
     </section>
 
     <!-- Media Section -->
-    <section class="page-section" id="media">
+    <section class="page-section bg-light" id="media">
         <div class="container">
-            <h2 class="text-center mb-5">In the Media</h2>
+            <h2 class="text-center mb-5">IN THE MEDIA</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <div class="media-item">
-                        <a href="https://www.psypost.org/neuroscientists-gain-a-deeper-understanding-of-how-lsd-affects-molecular-brain-activity/" class="text-decoration-none">
-                            <h5>Neuroscientists gain a deeper understanding of how LSD affects molecular brain activity</h5>
-                        </a>
-                        <p class="mb-0">PsyPost</p>
+                    <div class="media-item mb-4">
+                        <h5 class="media-title">
+                            <a href="https://www.psypost.org/neuroscientists-gain-a-deeper-understanding-of-how-lsd-affects-molecular-brain-activity/" class="text-decoration-none" style="color: var(--bs-primary);">
+                                Neuroscientists gain a deeper understanding of how LSD affects molecular brain activity
+                            </a>
+                        </h5>
+                        <p class="text-muted mb-0"><i class="fas fa-newspaper me-2"></i>PsyPost</p>
                     </div>
                     <div class="media-item">
-                        <a href="https://prfpodcast.libsyn.com/the-keystone-mechanism-theory-of-pain" class="text-decoration-none">
-                            <h5>IASP Pain Research Forum Podcasts: The Keystone Mechanism Theory of Pain</h5>
-                        </a>
-                        <p class="mb-0">Pain Research Forum Podcast</p>
+                        <h5 class="media-title">
+                            <a href="https://prfpodcast.libsyn.com/the-keystone-mechanism-theory-of-pain" class="text-decoration-none" style="color: var(--bs-primary);">
+                                IASP Pain Research Forum Podcasts: The Keystone Mechanism Theory of Pain
+                            </a>
+                        </h5>
+                        <p class="text-muted mb-0"><i class="fas fa-podcast me-2"></i>Pain Research Forum Podcast</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="page-section" id="about">
+        <div class="container">
+            <h2 class="text-center mb-5">ABOUT ME</h2>
+            <div style="display: flex; max-width: 900px; margin: 0 auto; gap: 30px;">
+                <div style="flex: 0 0 100px;">
+                    <img src="headshot.jpeg" alt="Tim Lawn" style="width: 300px; height: 300px; object-fit: cover;">
+                </div>
+                <div style="flex: 1;">
+                    <p class="mb-4">I am a postdoctoral research fellow at the Athinoula A. Martinos Center where I combine ultra-high field functional imaging of the brainstem and functional networks to investigate the neuromodulatory systems within ageing and Alzheimer's disease.</p>
+                    <p>During my PhD in the center for Neuroimaging Sciences at King's College London I worked on novel multi-modal approaches to combine molecular information from PET into BOLD fMRI analyses to investigate psychopharmacology, consciousness, and neuropsychiatric disorders.</p>
                 </div>
             </div>
         </div>
@@ -265,18 +306,4 @@
                         <i class="fas fa-graduation-cap"></i>
                     </a>
                     <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/tim-lawn-67a339154/">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <h4 class="mb-4">CONTACT</h4>
-                    <p class="mb-0">tlawn1@mgh.harvard.edu</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+                        <i class="fab fa
