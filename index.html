@@ -6,15 +6,21 @@
     <title>Tim Lawn - Neuroscience Research</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2c5282;
+            --text-color: #2d3748;
+            --light-bg: #f7fafc;
+        }
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: var(--text-color);
         }
         .top-nav {
-            background: #2F3542;
+            background: var(--primary-color);
             padding: 1.5rem;
             position: fixed;
             width: 100%;
@@ -40,7 +46,7 @@
             font-size: 0.9rem;
         }
         .header {
-            background: #2ECC71;
+            background: var(--primary-color);
             color: white;
             padding: 8rem 2rem 4rem;
             text-align: center;
@@ -84,38 +90,82 @@
             background: white;
             padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         h2 {
             font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        .publication {
+            background: var(--light-bg);
+            padding: 1.5rem;
             margin-bottom: 1rem;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 0.5rem;
-            color: #2a2a2a;
+            border-radius: 4px;
+            border-left: 3px solid var(--secondary-color);
+        }
+        .scholar-button {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.2s;
+        }
+        .scholar-button:hover {
+            background: var(--primary-color);
+        }
+        .media-item {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            border-left: 3px solid var(--secondary-color);
+        }
+        .media-item a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .media-item a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+        }
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+        .footer-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: white;
         }
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            margin-top: 2rem;
+            gap: 1rem;
+            margin-top: 1rem;
         }
         .social-links a {
             color: white;
             text-decoration: none;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem;
             border-radius: 4px;
             transition: background-color 0.2s;
-            background: rgba(255,255,255,0.1);
         }
         .social-links a:hover {
-            background: rgba(255,255,255,0.2);
-        }
-        .publication {
-            background: #f9f9f9;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-radius: 4px;
-            border-left: 3px solid #2ECC71;
+            background: rgba(255,255,255,0.1);
         }
     </style>
 </head>
@@ -124,7 +174,7 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#media">Media</a></li>
         </ul>
     </nav>
 
@@ -135,12 +185,6 @@
         </div>
         <p>Post-doctoral Research Fellow in Neuroimaging</p>
         <p>Athinoula A. Martinos Center for Biomedical Imaging, Mass General Hospital & Harvard Medical School</p>
-        <div class="social-links">
-            <a href="mailto:tlawn1@mgh.harvard.edu">Email</a>
-            <a href="https://scholar.google.com/citations?user=1rsnZCMAAAAJ&hl=en">Google Scholar</a>
-            <a href="https://www.researchgate.net/">ResearchGate</a>
-            <a href="https://bsky.app/profile/timlawn.bsky.social">Bluesky</a>
-        </div>
     </header>
 
     <div class="container">
@@ -162,21 +206,41 @@
             <div class="publication">
                 <p>Lawn, T. et al. (2023) 'The effects of Propofol Anaesthesia on Molecular-enriched Networks During Resting-state and Naturalistic Stimulation', Neuroimage</p>
             </div>
-            <div class="publication">
-                <p>Lawn, T. et al. (2023) 'From Networks to Neurotransmitters: Transcending Organisational Hierarchies with Molecular-informed Functional imaging', Neuroscience and biobehavioral Reviews</p>
-            </div>
-            <div class="publication">
-                <p>Lawn, T. et al. (2022) 'Differential Contributions of Serotonergic and Dopaminergic Functional Connectivity to the Phenomenology of LSD', Psychopharmacology</p>
-            </div>
+            <a href="https://scholar.google.com/citations?user=1rsnZCMAAAAJ&hl=en" class="scholar-button">See all publications</a>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Athinoula A. Martinos Center for Biomedical Imaging<br>
-            Massachusetts General Hospital & Harvard Medical School<br>
-            Boston, MA</p>
-            <p>Email: tlawn1@mgh.harvard.edu</p>
+        <section id="media">
+            <h2>In the Media</h2>
+            <div class="media-item">
+                <a href="https://www.psypost.org/neuroscientists-gain-a-deeper-understanding-of-how-lsd-affects-molecular-brain-activity/">Neuroscientists gain a deeper understanding of how LSD affects molecular brain activity</a>
+                <p>PsyPost</p>
+            </div>
+            <div class="media-item">
+                <a href="https://prfpodcast.libsyn.com/the-keystone-mechanism-theory-of-pain">IASP Pain Research Forum Podcasts: The Keystone Mechanism Theory of Pain</a>
+                <p>Pain Research Forum Podcast</p>
+            </div>
         </section>
     </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>Boston, MA<br>United States</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social</h3>
+                <div class="social-links">
+                    <a href="mailto:tlawn1@mgh.harvard.edu">Email</a>
+                    <a href="https://www.researchgate.net/">ResearchGate</a>
+                    <a href="https://bsky.app/profile/timlawn.bsky.social">Bluesky</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>tlawn1@mgh.harvard.edu</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
