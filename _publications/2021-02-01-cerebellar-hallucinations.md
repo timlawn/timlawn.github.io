@@ -3,6 +3,7 @@ title: "Cerebellar correlates of visual hallucinations in Parkinson's disease an
 collection: publications
 category: manuscripts
 permalink: /publication/2021-cerebellar-hallucinations
+excerpt: ''
 date: 2021-02-01
 venue: 'Cortex'
 paperurl: 'https://timlawn.github.io/files/lawn-2021-cerebellar-hallucinations.pdf'
