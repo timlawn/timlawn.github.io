@@ -3,6 +3,7 @@ title: "Differential contributions of serotonergic and dopaminergic functional c
 collection: publications
 category: manuscripts
 permalink: /publication/2022-lsd-serotonin-dopamine
+excerpt: ''
 date: 2022-04-01
 venue: 'Psychopharmacology'
 paperurl: 'https://timlawn.github.io/files/lawn-2022-lsd-serotonin-dopamine.pdf'
