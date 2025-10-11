@@ -9,4 +9,3 @@ paperurl: 'https://timlawn.github.io/files/lawn-2021-cerebellar-hallucinations.p
 citation: 'Lawn, T., & ffytche, D. (2021). Cerebellar correlates of visual hallucinations in Parkinson&apos;s disease and Charles Bonnet Syndrome. <i>Cortex</i>, 135, 311-325.'
 ---
 
-[Download paper here](https://timlawn.github.io/files/lawn-2021-cerebellar-hallucinations.pdf)
