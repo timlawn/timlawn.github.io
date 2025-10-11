@@ -47,7 +47,7 @@ He then returned home and killed his wife, stabbing her three times in the heart
 
 *"I imagine it appears that I brutally killed both of my loved ones. I was only trying to do a quick thorough job [...] If my life insurance policy is valid please pay off my debts [...] donate the rest anonymously to a mental health foundation. Maybe research can prevent further tragedies of this type [...] Give our dog to my in-laws. Tell them Kathy loved "Schocie" very much [...] If you can find in yourselves to grant my last wish, cremate me after the autopsy"*
 
-In the morning, Whitman went to the University of Texas at Austin campus where he climbed to the 28th floor of the tower, killing three people he came encountered, before firing indiscriminately from the observation deck. In the ensuing 96 minutes he killed thirteen more people and wounded a further thirty-one before being shot dead by police.
+In the morning, Whitman went to the University of Texas at Austin campus where he climbed to the 28th floor of the tower, killing three people he encountered, before firing indiscriminately from the observation deck. In the ensuing 96 minutes he killed thirteen more people and wounded a further thirty-one before being shot dead by police.
 
 ---
 
