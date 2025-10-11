@@ -13,9 +13,9 @@ title                    : "Tim Lawn"
 title_separator          : "-"
 name                     : &name "Tim Lawn"
 description              : &description "Post-doctoral Research Fellow in Neuroimaging at MGH Martinos Center and Harvard Medical School"
-url                      : https://timlawn.github.io # REPLACE WITH YOUR ACTUAL USERNAME
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "timlawn/timlawn.github.io" # REPLACE WITH YOUR USERNAME
+url                      : https://timlawn.github.io
+baseurl                  : ""
+repository               : "timlawn/timlawn.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 author:
