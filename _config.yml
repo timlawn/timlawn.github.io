@@ -20,7 +20,7 @@ repository               : "timlawn/timlawn.github.io"
 # Site Author - The following control what appear as part of the author content on the side bar.
 author:
   # Biographic information
-  avatar           : "profile.png" # Put your headshot.jpeg in /images/ folder and rename to profile.png
+  avatar           : "headshot.jpeg" # Put your headshot.jpeg in /images/ folder and rename to profile.png
   name             : "Tim Lawn"
   pronouns         : # example: "she/her"  
   bio              : "Post-doctoral Research Fellow in Neuroimaging"
