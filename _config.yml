@@ -13,7 +13,7 @@ title                    : "Tim Lawn"
 title_separator          : "-"
 name                     : &name "Tim Lawn"
 description              : &description "Post-doctoral Research Fellow in Neuroimaging at MGH Martinos Center and Harvard Medical School"
-url                      : https://timlawn.github.io
+url                      : "https://timlawn.github.io"
 baseurl                  : ""
 repository               : "timlawn/timlawn.github.io"
 
