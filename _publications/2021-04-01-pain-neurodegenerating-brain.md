@@ -9,4 +9,4 @@ paperurl: 'https://timlawn.github.io/files/lawn-2021-pain-neurodegenerating-brai
 citation: 'Lawn, T., Aman, Y., Rukavina, K., Sideris-Lampretsas, G., Howard, M., Ballard, C., Chaudhuri, K.R., & Malcangio, M. (2021). Pain in the neurodegenerating brain: insights into pharmacotherapy for Alzheimer disease and Parkinson disease. <i>Pain</i>, 162(4), 999-1006.'
 ---
 
-[Download paper here](https://timlawn.github.io/files/lawn-2021-pain-neurodegenerating-brain.pdf)
+
