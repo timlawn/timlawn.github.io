@@ -13,9 +13,9 @@ title                    : "Tim Lawn"
 title_separator          : "-"
 name                     : &name "Tim Lawn"
 description              : &description "Post-doctoral Research Fellow in Neuroimaging at MGH Martinos Center and Harvard Medical School"
-url                      : https://[YOUR-GITHUB-USERNAME].github.io # REPLACE WITH YOUR ACTUAL USERNAME
+url                      : https://timlawn.github.io # REPLACE WITH YOUR ACTUAL USERNAME
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "[YOUR-GITHUB-USERNAME]/[YOUR-GITHUB-USERNAME].github.io" # REPLACE WITH YOUR USERNAME
+repository               : "timlawn/timlawn.github.io" # REPLACE WITH YOUR USERNAME
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 author:
@@ -45,7 +45,7 @@ author:
   bitbucket        : # Username
   codepen          : # Username
   dribbble         : # Username
-  github           : # "your-github-username" - Add if you want to display
+  github           : # "timlawn" - Add if you want to display
   kaggle           : # Username  
   stackoverflow    : # User number
 
