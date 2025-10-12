@@ -1,6 +1,5 @@
 ---
 title: 'What can giving MDMA to octopi teach us about human social behaviour?'
-date: 2019-01-15
 permalink: /posts/2019/01/octopi-mdma/
 tags:
   - neuropharmacology
