@@ -31,6 +31,8 @@ The brain's neuromodulatory systems offer a critical opportunity to tackle these
 
 Because of this vast influence, they naturally bridge the scales I care about (from molecular to systems-level) and their dysfunction produces the heterogeneous symptom profiles that shape the pathophysiology and treatment of disorders I study. By developing methods that capture individual differences in these systems, we can better understand the machinations of the brain and move toward the precision medicine approaches these patients desperately need. 
 
+I'm always eager to discuss these ideas, explore potential collaborations, or generally chat over a pint (or cofffee). Feel free to reach out!
+
 ## In the Media
 
 **[Every patient is different, and so are their brains](https://www.ohbm-com.com/brain-bites/every-patient-is-different-and-so-are-their-brains)**  
