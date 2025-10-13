@@ -30,6 +30,7 @@ The brain's neuromodulatory systems offer a critical opportunity to tackle these
 <p style="text-align: right; font-size: 0.75em; font-style: italic; color: #666; margin-top: -10px;">Taken from a recent talk at Yale</p>
 
 
+
 Because of this vast influence, they naturally bridge the scales I care about (from molecular to systems-level) and their (dys)function contributes to the heterogeneous symptom profiles of disorders I study. By developing methods that capture individual differences in these systems, we can better understand the machinations of the brain and how these go wrong clinically. More importantly, by approaching these problems using tools that span from the molecular (upon which drugs act) to systems-level (which we can measure non-invasively with fMRI), I hope we can provide better mechanistic stratification for treatment.  
 
 I'm always eager to discuss these ideas, explore potential collaborations, or generally chat over a pint (or coffee). Feel free to reach out!
