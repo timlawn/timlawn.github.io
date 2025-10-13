@@ -8,13 +8,21 @@ redirect_from:
   - /about.html
 ---
 
-I investigate how the brain's neuromodulatory neurotransmitter systems shape broader network dynamics, how this is altered across various disorders, and how we can intervene in these processes with precision medicine.
+## Who I am
 
-My current work as a postdoctoral research fellow at the Athinoula A. Martinos Center combines functional brainstem imaging with network science to investigate how the neuromodulatory systems give rise to the heterogeneous early symptoms of Alzheimer's disease.
+I am a postdoctoral research fellow at the Athinoula A. Martinos Center for Biomedical Imaging, where I investigate how the brain's neuromodulatory systems shape network dynamics and give rise to the heterogeneous early symptoms of Alzheimer's disease. My work combines functional brainstem imaging with network science to map how deep brain nuclei influence broader neural circuits.
 
-During my PhD in the Center for Neuroimaging Sciences at King's College London, I worked on novel multi-modal approaches to combine molecular information from PET into BOLD fMRI analyses to investigate psychopharmacology, consciousness, and neuropsychiatric disorders.
+I completed my PhD at the Center for Neuroimaging Sciences at King's College London, where I developed and deployed multi-modal approaches integrating molecular information from PET into BOLD fMRI analyses. This work spanned psychopharmacology, consciousness, and neuropsychiatric disorders, establishing new methods for understanding how neurochemistry shapes brain function.
 
 When not doing neuroscience, thinking about neuroscience, or arguing about neuroscience at the pub, you can probably find me climbing, on a motorbike, or off on an adventure somewhere.
+
+## What I care about
+
+I believe that the two most fundamental roles of science are to help us understand our place within the world and to help those trying to survive within it. Consciousness remains one of the greatest unsolved scientific mysteries whilst disorders of the brain (spanning neuropsychiatric, neurodegenerative, and chronic pain) are amongst the greatest unmet needs within medicine. These joint motivations are what set me down the neuroscience path.
+
+Along the way, I became increasingly convinced that (1) understanding the brain will require methods and theories that span across organizational scales and (2) grappling with the immense heterogeneity across individuals were crucial to progress.
+
+The brain's neuromodulatory systems offer a critical opportunity to tackle these questions. Originating from tiny, ancient, and evolutionarily conserved nuclei deep in the brainstem, these systems act as the brain's master controllers—solving a fundamental puzzle: how does the brain's fixed structural wiring produce such a vast diversity of mental states? They do this by broadcasting neuromodulators across the entire brain, dynamically reconfiguring network states to meet current demands. Because of this vast influence, they naturally bridge the scales I care about (from molecular receptor dynamics to network-wide coordination) and their dysfunction produces the heterogeneous symptom profiles that define the pathophysiology and treatment of disorders I study. By developing methods that capture individual differences in these systems, we can better understand the machinations of the brain and move toward the precision medicine approaches these patients desperately need. 
 
 ## In the Media
 
