@@ -25,13 +25,14 @@ Along the way, I became increasingly convinced that (1) understanding the brain 
 The brain's neuromodulatory systems offer a critical opportunity to tackle these questions. Originating from tiny, ancient, and evolutionarily conserved nuclei deep in the brainstem, these systems act as the brain's master controllers, solving a fundamental puzzle: how does the brain's fixed structural wiring produce such a vast diversity of brain states? They do this by broadcasting neuromodulators across the entire brain, dynamically reconfiguring networks to meet current demands. 
 
 
+
 ![Neuromodulatory systems coordinate the brain](/images/NMS_Yale_slide.png)
 <p style="text-align: right; font-size: 0.75em; font-style: italic; color: #666; margin-top: -10px;">Taken from a recent talk at Yale</p>
 
 
-Because of this vast influence, they naturally bridge the scales I care about (from molecular to systems-level) and their dysfunction produces the heterogeneous symptom profiles that shape the pathophysiology and treatment of disorders I study. By developing methods that capture individual differences in these systems, we can better understand the machinations of the brain and move toward the precision medicine approaches these patients desperately need. 
+Because of this vast influence, they naturally bridge the scales I care about (from molecular to systems-level) and their (dys)function contributes to the heterogeneous symptom profiles of disorders I study. By developing methods that capture individual differences in these systems, we can better understand the machinations of the brain and how these go wrong clinically. More importantly, by approaching these problems using tools that span from the molecular (upon which drugs act) to systems-level (which we can measure non-invasively with fMRI), I hope we can provide better mechanistic stratification for treatment.  
 
-I'm always eager to discuss these ideas, explore potential collaborations, or generally chat over a pint (or cofffee). Feel free to reach out!
+I'm always eager to discuss these ideas, explore potential collaborations, or generally chat over a pint (or coffee). Feel free to reach out!
 
 ## In the Media
 
