@@ -26,8 +26,7 @@ The brain's neuromodulatory systems offer a critical opportunity to tackle these
 
 
 ![Neuromodulatory systems coordinate the brain](/images/NMS_Yale_slide.png)
-{: style="text-align: right; font-size: 0.8em; font-style: italic;"}
-*Taken from a recent talk at Yale*
+<p style="text-align: right; font-size: 0.75em; font-style: italic; color: #666; margin-top: -10px;">Taken from a recent talk at Yale</p>
 
 Because of this vast influence, they naturally bridge the scales I care about (from molecular to systems-level) and their dysfunction produces the heterogeneous symptom profiles that shape the pathophysiology and treatment of disorders I study. By developing methods that capture individual differences in these systems, we can better understand the machinations of the brain and move toward the precision medicine approaches these patients desperately need. 
 
