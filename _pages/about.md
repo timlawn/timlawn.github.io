@@ -24,7 +24,9 @@ Along the way, I became increasingly convinced that (1) understanding the brain 
 
 The brain's neuromodulatory systems offer a critical opportunity to tackle these questions. Originating from tiny, ancient, and evolutionarily conserved nuclei deep in the brainstem, these systems act as the brain's master controllers, solving a fundamental puzzle: how does the brain's fixed structural wiring produce such a vast diversity of brain states? They do this by broadcasting neuromodulators across the entire brain, dynamically reconfiguring networks to meet current demands. 
 
+
 ![Neuromodulatory systems coordinate the brain](/images/NMS_Yale_slide.png)
+{: style="text-align: right; font-size: 0.8em; font-style: italic;"}
 *Taken from a recent talk at Yale*
 
 Because of this vast influence, they naturally bridge the scales I care about (from molecular to systems-level) and their dysfunction produces the heterogeneous symptom profiles that shape the pathophysiology and treatment of disorders I study. By developing methods that capture individual differences in these systems, we can better understand the machinations of the brain and move toward the precision medicine approaches these patients desperately need. 
