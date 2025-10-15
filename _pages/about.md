@@ -31,7 +31,7 @@ The brain's neuromodulatory systems offer a critical opportunity to tackle these
 
 
 
-Because of this vast influence, they naturally bridge the scales I care about (from molecular to systems-level) and their (dys)function contributes to the heterogeneous symptom profiles of disorders I study. By developing methods that capture individual differences in these systems, we can better understand the machinations of the brain and how these go wrong clinically. More importantly, by approaching these problems using tools that span from the molecular (upon which drugs act) to systems-level (which we can measure non-invasively with fMRI), I hope we can provide better mechanistic stratification for treatment.  
+Because of this vast influence, they naturally bridge the scales I care about (from molecular to systems-level) and their (dys)function contributes to the heterogeneous symptom profiles of disorders I study. By developing methods that capture individual differences in these systems, we can better understand the machinations of the brain and how these go wrong clinically. More importantly, by approaching these problems using tools that span from the molecular (upon which drugs act) to systems-level (which we can measure non-invasively with fMRI), I hope we can characterise inter-individual heterogenity in a manner amenable to precision interventions.  
 
 I'm always eager to discuss these ideas, explore potential collaborations, or generally chat over a pint (or coffee). Feel free to reach out!
 
