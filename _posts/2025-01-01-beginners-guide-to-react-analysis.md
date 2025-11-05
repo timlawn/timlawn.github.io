@@ -243,17 +243,17 @@ While most REACT applications have used resting-state fMRI, the method can be ex
 
 A few key points to remember:
 
-**What REACT maps show:** How each brain region's BOLD signal correlates with the temporal dynamics of regions highly enriched in a particular receptor. Positive values indicate functional coupling; negative values indicate anti-correlation.
+**What REACT does NOT show:** Direct measures of neurotransmitter function. fMRI lacks the molecular specificity to measure these directly. 
 
-**What REACT does NOT show:** Direct measures of neurotransmitters. fMRI lacks the molecular specificity to measure these directly
+**What REACT does show:** How each brain region's BOLD signal correlates with the temporal dynamics of regions highly enriched in a particular receptor. Positive values indicate functional coupling; negative values indicate anti-correlation. This is a helpful lens through which to view connectivity which can help bring it closer to molecular and neurobiological mechanisms. 
 
 **Statistical considerations:** The same principles apply as with standard fMRI: correct for multiple comparisons (ideally, Bonferroni correcting across molecular systems), consider sample size, and validate findings in independent cohorts when possible.
 
 ## Common Pitfalls and Tips
 
-**Template quality matters:** Use high-quality, well-validated PET templates from adequate sample sizes. Poor templates yield poor results.
+**Template quality matters:** Use high-quality, well-validated PET templates from adequate sample sizes. Poor templates yield poor results (💩 in 💩 out)
 
-**Multiple systems:** When including multiple molecular templates simultaneously (strongly recommended), they're all estimated together in Stage 1, accounting for spatial overlap between systems. This can run into challenges of collinearity. Variance inflation factors (VIF) can help assess this for your combination of PET maps, with values >5 often suggested to be problematic. In practice, strategically selecting PET maps with distinct spatial distributions helps minimize collinearity issues and will maximise your chance of success.
+**Multiple systems:** When including multiple molecular templates simultaneously (strongly recommended), they're all estimated together in Stage 1, accounting for spatial overlap between systems. This can run into challenges of collinearity. Variance inflation factors (VIF) can help assess this for your combination of PET maps, with values >5 often suggested to be problematic [<a href="#ref9">9</a>]. In practice, strategically selecting PET maps with distinct spatial distributions helps minimize collinearity issues and will maximise your chance of success.
 
 **Interpretation isn't causation:** This is worth reiterating. Finding changes in, say, a serotonin-enriched network doesn't *prove* serotonin is causally involved. It suggests this is a useful framework for understanding the effects, but additional evidence (pharmacological challenges, PET studies, etc.) strengthens causal claims.
 
@@ -292,3 +292,5 @@ Now, go forth and enrich your connectivity analyses!
 7. <a id="ref7"></a> Wong N. M. I., Dipasquale O., Turkheimer F. E., Findon J. L., Wichers R. H., Dimitrov M., et al. *Differences in social brain function in autism spectrum disorder are linked to the serotonin transporter: A randomised placebo-controlled single-dose crossover trial.* _Journal of Psychopharmacology_, 2022; **36(6)**: 723–731. [https://doi.org/10.1177/02698811221092509](https://doi.org/10.1177/02698811221092509)
 
 8. <a id="ref8"></a> Lawn T., Martins D., O'Daly O., Williams S., Howard M., Dipasquale O. *The effects of propofol anaesthesia on molecular-enriched networks during resting-state and naturalistic listening.* _NeuroImage_, 2023; **271**: 120018. [https://doi.org/10.1016/j.neuroimage.2023.120018](https://doi.org/10.1016/j.neuroimage.2023.120018)
+
+9. <a id="ref9"></a> Lawn T., Martins D., Sethi A., Veronese M., Hesse S., Rullmann M., Sabri O., Turkheimer F. E., Harrison N. A., Mehta M. A., Cercignani M., Dipasquale O. Mapping transdiagnostic deviations in molecular-enriched functional networks using normative modeling. Communications Biology, 2024; 7: 689. https://doi.org/10.1038/s42003-024-06391-3
