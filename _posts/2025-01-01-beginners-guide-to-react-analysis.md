@@ -63,7 +63,7 @@ The output is a set of molecular-enriched functional connectivity maps (one for 
 
 Before starting this tutorial, ensure you have:
 
-- **Preprocessed fMRI data**: Standard preprocessing (realignment, normalization to MNI space, spatial smoothing ~6mm FWHM)
+- **Preprocessed fMRI voxelwise data**: Standard preprocessing (including spatial smoothingM)
 - **Python 3.7+** with pip installed
 - **FSL** installed and in your PATH
 - **Basic command-line skills**: Ability to navigate directories and run bash/python commands
@@ -168,7 +168,7 @@ This creates:
 
 ### Step 5: Run REACT for Each Subject
 
-Run REACT for each participant:
+For a single subject:
 
 ```bash
 react \
@@ -179,7 +179,27 @@ react \
     REACT_output/sub-001/sub-001
 ```
 
-Outputs:
+For multiple subjects, use a bash loop:
+
+```bash
+for fmri_file in `cat subject_list.txt`
+do
+    # Extract subject ID (adjust based on your naming convention)
+    subject_id=$(basename ${fmri_file} .nii.gz | sed 's/_preprocessed//')
+    
+    echo "Running REACT for ${subject_id}"
+    mkdir -p REACT_output/${subject_id}
+    
+    react \
+        ${fmri_file} \
+        REACT_masks/mask_stage1.nii.gz \
+        REACT_masks/mask_stage2.nii.gz \
+        PET_templates/normalised_PET_atlas_4D_NAT_DAT_SERT.nii.gz \
+        REACT_output/${subject_id}/${subject_id}
+done
+```
+
+Expected outputs (per subject):
 
 ```
 sub-001_react_stage1.txt              # molecular time series (one column per PET map in order of input)
