@@ -5,8 +5,6 @@ tags:
   - fMRI
   - PET
   - REACT
-  - Dipasquale
-  - Lawn
   - multimodal
   - imaging
   - neurotransmitters
