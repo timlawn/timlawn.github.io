@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/2025-molecular-specificity-pharmacoimaging
 excerpt: ''
 date: 2025-11-28
-venue: 'OSF Preprints'
+venue: 'PsyArXiv'
 paperurl: 'https://timlawn.github.io/files/lawn-2025-molecular-specificity.pdf'
 citation: 'Lawn, T., & Mehta, M.A. (2025). Towards Molecular Specificity in Pharmacoimaging. <i>PsyArXiv</i>. doi:10.31234/osf.io/9quzp'
 ---
