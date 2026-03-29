@@ -7,7 +7,7 @@ excerpt: ''
 date: 2026-01-04
 venue: 'Pain Reports'
 paperurl: 'https://timlawn.github.io/files/lawn-2026-cuff-algometry-pain.pdf'
-citation: 'Lawn, T., Taylor, J.L., Kowalczyk, O., Graven-Nielsen, T., Howard, M.A., & Bannister, K. (2025). Cuff Algometry Induces Large Yet Variable Conditioned Pain Modulation Effects. <i>medRxiv</i>.'
+citation: 'Lawn, T., Taylor, J.L., Kowalczyk, O., Graven-Nielsen, T., Howard, M.A., & Bannister, K. (2025). Cuff Algometry Induces Large Yet Variable Conditioned Pain Modulation Effects. <i>Pain Reports</i>.'
 ---
 
 Introduction: 
