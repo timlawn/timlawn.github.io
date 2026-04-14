@@ -272,7 +272,7 @@ Now, go forth and enrich your connectivity analyses!
 
 **Questions or interested in collaborating?** I'm always happy to discuss REACT applications, troubleshoot analyses, or explore potential collaborations. Feel free to reach out:
 
-- **Email**: tlawn1@mgh.harvard.edu
+- **Email**: tim_lawn@hotmail.com
 - **BlueSky**: @timlawn.bsky.social
 
 ## References
