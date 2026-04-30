@@ -28,11 +28,16 @@ Education
 
 Professional Experience
 ======
-* **2024 - Present: Postdoctoral Research Fellow**
+* **2026 - Present: Postdoctoral Research Fellow**
+  * University of Oxford
+  * Projects: Behavioural and neural roles of serotonin and dopamine in frontal cortex 
+  * Supervisors: Heidi Jacobs & Jorge Sepulcre
+  * 
+* **2024 - 2026: Postdoctoral Research Fellow**
   * Athinoula A. Martinos Centre for Biomedical Imaging
   * Harvard Medical School and Mass General Hospital
   * Projects: Large scale brainstem and multi-modal fMRI analyses of resilience and heterogeneity in Alzheimer's disease
-  * Supervisors: Heidi Jacobs and Jorge Sepulcre
+  * Supervisors: Nima Khalighinejad, Steven Kennerly, & Matthew Rushworth
 
 Continued Education
 ======
@@ -54,6 +59,7 @@ Research Skills
 
 Grants and Awards
 ======
+* Brainstem Cost Action Young Researcher and Innovator Conference grant (€950)
 * Best Poster Prize – The Integrative Neuromodulatory Subcortical Systems (INSS) meeting (2025)
 * Travel grant: Human Amyloid Imaging - $600 (2024)
 * Addenbrooke's Charitable Trust – co-award - £40,000 (2024)
@@ -78,6 +84,7 @@ Publications
 
 Selected Invited Talks
 ======
+* **2026** Neuroimaging without a scanner: making the most of open data - Studying the Human Brain NeuroimEx, Exeter University, UK
 * **2025:** Pushing forwards clinical neuroscience with brainstem fMRI - Yale MRRC Neuroscience Seminar Series, New Haven, USA
 * **2025:** Functional submodules in the human locus Coeruleus are differentially susceptible to tau pathology - Human Amyloid Imaging, Puerto Rico, USA
 * **2024:** Transcending organisational hierarchies with Molecular-enriched fMRI - Athinoula A. Martinos Centre for Biomedical Imaging, Cambridge, USA
