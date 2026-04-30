@@ -23,9 +23,9 @@ author:
   avatar           : "headshot.jpeg" # Put your headshot.jpeg in /images/ folder and rename to profile.png
   name             : "Tim Lawn"
   pronouns         : # example: "she/her"  
-  bio              : "Post-doctoral Research Fellow in Neuroimaging"
-  location         : "Boston, MA"
-  employer         : "Martinos Center (Harvard/MGH)"
+  bio              : "Postdoctoral Research Fellow in Neuroimaging"
+  location         : "Oxford, UK"
+  employer         : "University of Oxford"
   uri              : # URL
   email            : "tim_lawn@hotmail.com" 
 
@@ -51,7 +51,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : # Username
+  bluesky          : "@timlawn.bsky.social"
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -68,7 +68,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : "lawn_tim"
+  twitter          : "@lawn_tim"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
