@@ -10,7 +10,9 @@ redirect_from:
 
 ## Who I am
 
-I am a postdoctoral research fellow at the Athinoula A. Martinos Center for Biomedical Imaging, where I investigate how the brain's neuromodulatory systems shape network dynamics and give rise to the heterogeneous early symptoms of Alzheimer's disease. My work combines functional brainstem imaging with network science to map how deep brain nuclei influence broader neural circuits.
+I am a postdoctoral research fellow at the University of Oxford, where I study how the brain's neuromodulatory systems shape cognition and behaviour. My current work focuses on the roles of dopamine and serotonin in decision-making, combining fMRI with pharmacology in non-human primates.
+
+Previously, at the Athinoula A. Martinos Center for Biomedical Imaging, I investigated how dysfunction of the noradrenergic and serotonergic systems gives rise to the heterogeneous patterns of psychiatric symptoms and cognitive decline seen in preclinical Alzheimer's disease.
 
 I completed my PhD at the Center for Neuroimaging Sciences at King's College London, where I developed and deployed multi-modal approaches integrating molecular information from PET into BOLD fMRI analyses. This work spanned psychopharmacology, consciousness, and neuropsychiatric disorders, establishing new methods for understanding how neurochemistry shapes brain (dys)function.
 
