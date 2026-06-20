@@ -2,11 +2,11 @@
 title: "Spatial collinearity constrains multivariate molecular-enriched network estimation"
 collection: publications
 category: manuscripts
-permalink: 'https://doi.org/10.64898/2026.06.10.731385'
+permalink: /publication/lawn-2026-REACT-collinearity
 excerpt: ''
 date: 2026-06-12
 venue: 'bioRxiv'
-paperurl: /publication/lawn-2026-REACT-collinearity
+paperurl: 'https://timlawn.github.io/files/lawn-2026-REACT-collinearity.pdf'
 citation: 'Lawn, T., Nakuci, J., Williams, S.C.R., Turkheimer, F., & Mehta, M.A. (2026). Spatial collinearity constrains multivariate molecular-enriched network estimation. <i>bioRxiv</i>. doi:10.64898/2026.06.10.731385'
 ---
 
