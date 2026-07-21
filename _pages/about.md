@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "About Me"
-excerpt: "About me"
+excerpt: "Postdoctoral researcher at the University of Oxford studying how the brain's neuromodulatory systems shape cognition, consciousness, and disease."
 author_profile: true
 redirect_from: 
   - /about/
