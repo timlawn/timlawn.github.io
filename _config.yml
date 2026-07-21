@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Tim Lawn"
 title_separator          : "-"
 name                     : &name "Tim Lawn"
-description              : &description "Post-doctoral Research Fellow in Neuroimaging at MGH Martinos Center and Harvard Medical School"
+description              : &description "Post-doctoral Research Fellow in Neuroimaging at the University of Oxford"
 url                      : "https://timlawn.github.io"
 baseurl                  : ""
 repository               : "timlawn/timlawn.github.io"
@@ -35,7 +35,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=1rsnZCMAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : # URL - Add if you have one
+  orcid            : "https://orcid.org/0000-0002-1643-5987"
   semantic         : # URL
   pubmed           : # URL
   researchgate     : "https://www.researchgate.net/profile/Timothy-Lawn-2"
