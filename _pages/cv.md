@@ -9,6 +9,20 @@ redirect_from:
 
 {% include base_path %}
 
+Professional Experience
+======
+* **2026 - Present: Postdoctoral Research Associate**
+  * University of Oxford
+  * Projects: Disentangling the behavioural and neural roles of serotonin and dopamine
+  * Supervisors:  Nima Khalighinejad & Matthew Rushworth
+  
+* **2024 - 2026: Postdoctoral Research Associate**
+  * Athinoula A. Martinos Centre for Biomedical Imaging
+  * Harvard Medical School and Mass General Hospital (in close collaboration with Yale)
+  * Projects: Neuromodulatory nucleus activity and connectivity underlying cognitive and depressive symptoms in prelinical Alzheimer's disease
+  * Supervisors: Heidi Jacobs & Jorge Sepulcre
+
+
 Education
 ======
 * **Ph.D. in Neuroimaging**, King's College London, 2024
@@ -26,23 +40,12 @@ Education
   * Thesis: Translational Barriers in Neuropathic Pain Research
   * Supervisor: Peter McNaughton
 
-Professional Experience
-======
-* **2026 - Present: Postdoctoral Research Fellow**
-  * University of Oxford
-  * Projects: Behavioural and neural roles of serotonin and dopamine in frontal cortex 
-  * Supervisors: Heidi Jacobs & Jorge Sepulcre
-  * 
-* **2024 - 2026: Postdoctoral Research Fellow**
-  * Athinoula A. Martinos Centre for Biomedical Imaging
-  * Harvard Medical School and Mass General Hospital
-  * Projects: Large scale brainstem and multi-modal fMRI analyses of resilience and heterogeneity in Alzheimer's disease
-  * Supervisors: Nima Khalighinejad, Steven Kennerly, & Matthew Rushworth
 
 Continued Education
 ======
 * **Applied Biostatistics**, Harvard Medical School, 2024-2025
 * **HST.583: Functional Magnetic Resonance Imaging: Data Acquisition and Analysis**, Massachusetts Institute of Technology, Fall 2024 (Audited)
+
 
 Research Skills
 ======
@@ -56,6 +59,7 @@ Research Skills
   * Highly multi-modal and multivariate methods
 * **Visualization**
   * Strong graphic design skills across multiple software packages
+
 
 Grants and Awards
 ======
@@ -76,9 +80,10 @@ Grants and Awards
 * BSc: Highest achieving student in Perspectives on Pain and CNS disorders (2018)
 * BSc: Best Ex vivo neuroanatomy examination award (2017)
 
+
 Selected Invited Talks
 ======
-* **2026** Neuroimaging without a scanner: making the most of open data - Studying the Human Brain NeuroimEx, Exeter University, UK
+* **2026**  Neuroimaging without a scanner: making the most of open data - Studying the Human Brain NeuroimEx, Exeter University, UK
 * **2025:** Pushing forwards clinical neuroscience with brainstem fMRI - Yale MRRC Neuroscience Seminar Series, New Haven, USA
 * **2025:** Functional submodules in the human locus Coeruleus are differentially susceptible to tau pathology - Human Amyloid Imaging, Puerto Rico, USA
 * **2024:** Transcending organisational hierarchies with Molecular-enriched fMRI - Athinoula A. Martinos Centre for Biomedical Imaging, Cambridge, USA
@@ -87,6 +92,7 @@ Selected Invited Talks
 * **2022:** Multi-modal analysis of neuromodulatory systems - Shine Lab (Sydney), Sydney, Australia
 * **2022:** Pain in the neurodegenerating brain: implications for pharmacotherapy - The Oxford Advanced Pain and Symptom Management Course, Oxford, UK
 * **2022:** The molecular-enriched functional circuits underlying consciousness and cognition - IOPPN Brilliant Minds Lecture Series, London, UK
+
 
 Teaching
 ======
