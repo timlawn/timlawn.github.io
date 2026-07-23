@@ -76,12 +76,6 @@ Grants and Awards
 * BSc: Highest achieving student in Perspectives on Pain and CNS disorders (2018)
 * BSc: Best Ex vivo neuroanatomy examination award (2017)
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
 Selected Invited Talks
 ======
 * **2026** Neuroimaging without a scanner: making the most of open data - Studying the Human Brain NeuroimEx, Exeter University, UK
