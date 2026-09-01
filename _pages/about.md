@@ -8,6 +8,8 @@ redirect_from:
   - /about.html
 ---
 
+{% include brain-banner.html %}
+
 ## Who I am
 
 I am a postdoctoral research fellow at the University of Oxford, where I study how the brain's neuromodulatory systems shape cognition and behaviour. My current work focuses on the roles of dopamine and serotonin in decision-making, combining fMRI with pharmacology in non-human primates.
