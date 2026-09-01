@@ -77,9 +77,9 @@
     edgeDecay: 650,     // ms for an edge's heat to fade
 
     // --- haemodynamics ---
-    boldGain: 1.35,     // 0 disables the slow bloom entirely
-    boldRise: 480,      // ms — time-to-peak, so the bloom lags the spike
-    boldFall: 640,      // ms — kept short; the tail is what overstays
+    boldGain: 1.30,     // 0 disables the slow bloom entirely
+    boldRise: 440,      // ms — time-to-peak, so the bloom lags the spike
+    boldFall: 580,      // ms — kept short; the tail is what overstays
     boldRadius: 5.5,    // bloom radius, as a multiple of spacing
     // The wash spreads far wider than a node, so it hits the canvas edge long
     // before the nodes do and gets cut into a straight line. Raising the mask
