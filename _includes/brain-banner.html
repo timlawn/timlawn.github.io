@@ -4,9 +4,23 @@
 </div>
 
 <style>
-  .brain-banner { margin: 0 0 1.75rem; }
-  .brain-banner canvas { display: block; width: 100%; height: 260px; touch-action: pan-y; }
-  @media (max-width: 768px) { .brain-banner canvas { height: 170px; } }
+  /* The banner is the page's opening statement, so the "About Me" heading is
+     taken out of the visual flow. It stays in the DOM — seo.html builds
+     <title>, og:title and twitter:title from page.title, and screen readers
+     still announce it — using the theme's own .visually-hidden pattern. */
+  .page__inner-wrap > header { margin: 0; padding: 0; }
+  .page__inner-wrap > header .page__title {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    width: 1px !important;
+    border: 0 !important;
+    overflow: hidden;
+  }
+
+  .brain-banner { margin: 0 0 1.5rem; }
+  .brain-banner canvas { display: block; width: 100%; height: 320px; touch-action: pan-y; }
+  @media (max-width: 768px) { .brain-banner canvas { height: 210px; } }
 </style>
 
 <script src="{{ base_path }}/assets/js/neurobanner.js"></script>
@@ -23,17 +37,14 @@
                 bright: '#8ef0ff', core: '#f0ffff', bold: '#3fa8bd' };
 
   function dark() { return document.documentElement.getAttribute('data-theme') === 'dark'; }
+  function palette() { return { colors: dark() ? DARK : LIGHT, edgeAlpha: dark() ? 0.24 : 0.18 }; }
 
-  var banner = NeuroBanner.mount(el, {
-    colors: dark() ? DARK : LIGHT,
-    edgeAlpha: dark() ? 0.28 : 0.22,
-  });
+  var banner = NeuroBanner.mount(el, palette());
 
   // follow the site's light/dark toggle
   if (window.MutationObserver) {
-    new MutationObserver(function () {
-      banner.setConfig({ colors: dark() ? DARK : LIGHT, edgeAlpha: dark() ? 0.28 : 0.22 });
-    }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    new MutationObserver(function () { banner.setConfig(palette()); })
+      .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
   }
 })();
 </script>

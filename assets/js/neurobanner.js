@@ -58,29 +58,34 @@
     seed: 7,
 
     // --- field ---
-    spacing: 20,        // min distance between nodes (css px)
+    spacing: 14,        // min distance between nodes (css px)
     linkRadius: 1.85,   // max edge length, as a multiple of spacing
     longRange: 16,      // small-world shortcut edges (let waves jump)
-    fadeX: 0.24,        // horizontal dissolve, as a fraction of width
-    fadeY: 0.15,        // vertical dissolve
-    nodeSize: 1.7,
+    fadeX: 0.26,        // horizontal dissolve, as a fraction of width
+    fadeY: 0.30,        // vertical dissolve — deep, so nothing reaches the edge
+    nodeSize: 1.2,
 
     // --- dynamics ---
     fanout: 3,          // max impulses launched per spike
     pSeed: 0.95,        // propagation probability, generation 0
     pNear: 0.58,        //   ... generations 1-3
     pFar: 0.30,         //   ... beyond that
-    maxGen: 18,
+    maxGen: 26,
     refractory: 1000,   // ms a node cannot re-fire
     conduction: 200,    // impulse speed, css px/s
     lightDecay: 850,    // ms for a node's spike to fade
     edgeDecay: 650,     // ms for an edge's heat to fade
 
     // --- haemodynamics ---
-    boldGain: 1.6,      // 0 disables the slow bloom entirely
-    boldRise: 600,      // ms — time-to-peak, so the bloom lags the spike
-    boldFall: 900,      // ms — kept short; the tail is what overstays
-    boldRadius: 4.2,    // bloom radius, as a multiple of spacing
+    boldGain: 1.35,     // 0 disables the slow bloom entirely
+    boldRise: 480,      // ms — time-to-peak, so the bloom lags the spike
+    boldFall: 640,      // ms — kept short; the tail is what overstays
+    boldRadius: 5.5,    // bloom radius, as a multiple of spacing
+    // The wash spreads far wider than a node, so it hits the canvas edge long
+    // before the nodes do and gets cut into a straight line. Raising the mask
+    // to a power makes it fall off much faster than the field it sits under,
+    // so it has faded out before it can be clipped.
+    boldMaskPow: 2.4,
 
     // --- idle activity ---
     // The field only stirs once the cursor has been away for idleDelay ms,
@@ -95,7 +100,7 @@
     maxImpulses: 300,
 
     // --- interaction ---
-    hoverRadius: 30,
+    hoverRadius: 26,
     hoverEnabled: true,
 
     // Rest is neutral grey; everything teal is activation. The ramp runs
@@ -109,7 +114,7 @@
       bold:    '#4fb3c8',  // slow haemodynamic wash
       nucleus: '#b8682e',  // deep sources (only drawn when nuclei > 0)
     },
-    edgeAlpha: 0.22,
+    edgeAlpha: 0.18,
     showNuclei: true,
   };
 
@@ -512,7 +517,7 @@
         const R = cfg.spacing * cfg.boldRadius * boldScale;
         for (let i = 0; i < nodes.length; i++) {
           const n = nodes[i];
-          const a = n.b2 * cfg.boldGain * n.m;
+          const a = n.b2 * cfg.boldGain * Math.pow(n.m, cfg.boldMaskPow);
           if (a < 0.02) continue;
           any = true;
           boldCtx.globalAlpha = Math.min(1, a);
