@@ -12,7 +12,7 @@ redirect_from:
 
 ## Who I am
 
-I am a postdoctoral research fellow at the University of Oxford, where I study how the brain's neuromodulatory systems shape cognition and behaviour. My current work focuses on the roles of dopamine and serotonin in decision-making, combining fMRI with pharmacology in non-human primates.
+I am a Wellcome trust early career research fellow at the University of Oxford, where I study how the neuromodulatory neurotransmitter systems shape brain networks and behaviour. My current work focuses on the roles of dopamine and serotonin in decision-making, combining fMRI with anatomicaly-targeted pharmacology in non-human primates.
 
 Previously, at the Athinoula A. Martinos Center for Biomedical Imaging, I investigated how dysfunction of the noradrenergic and serotonergic systems gives rise to the heterogeneous patterns of psychiatric symptoms and cognitive decline seen in preclinical Alzheimer's disease.
 
@@ -24,7 +24,7 @@ When not doing neuroscience, thinking about neuroscience, or arguing about neuro
 
 I believe that the two most fundamental roles of science are to help us understand our place within the universe and to help those trying to survive within it. Consciousness remains one of the greatest unsolved scientific mysteries whilst disorders of the brain (spanning neuropsychiatric, neurodegenerative, and chronic pain) are amongst the greatest unmet needs within medicine. These joint motivations are what set me down the neuroscience path.
 
-Along the way, I became increasingly convinced that (1) understanding the brain will require methods and theories that span across organizational scales and (2) grappling with the immense heterogeneity across individuals were crucial to progress.
+Along the way, I became increasingly convinced that progress would require (1) methods and theories that span across the brain's organizational scales and (2) grappling with the immense heterogeneity across individuals.
 
 The brain's neuromodulatory systems offer a critical opportunity to tackle these questions. Originating from tiny, ancient, and evolutionarily conserved nuclei deep in the brainstem, these systems act as the brain's master controllers, solving a fundamental puzzle: how does the brain's fixed structural wiring produce such a vast diversity of brain states? They do this by releasing neuromodulatory neurotransmitters across the entire brain, dynamically reconfiguring networks to meet current demands. 
 
