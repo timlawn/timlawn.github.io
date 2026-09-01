@@ -10,7 +10,7 @@ redirect_from:
 
 ## Who I am
 
-I am a Wellcome trust early career research fellowship at the University of Oxford, where I study how the brain's neuromodulatory systems shape cognition and behaviour. My current work focuses on the roles of dopamine and serotonin in decision-making, combining fMRI with pharmacology in non-human primates.
+I am a Wellcome trust early career research fellow at the University of Oxford, where I study how the neuromodulatory neurotransmitter systems shape brain networks and behaviour. My current work focuses on the roles of dopamine and serotonin in decision-making, combining fMRI with anatomicaly-targeted pharmacology in non-human primates.
 
 Previously, at the Athinoula A. Martinos Center for Biomedical Imaging, I investigated how dysfunction of the noradrenergic and serotonergic systems gives rise to the heterogeneous patterns of psychiatric symptoms and cognitive decline seen in preclinical Alzheimer's disease.
 
