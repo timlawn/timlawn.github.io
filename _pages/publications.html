@@ -5,6 +5,20 @@ permalink: /publications/
 author_profile: true
 ---
 
+<style>
+  /* The nav and the browser tab already say "Publications"; the heading is
+     redundant above the list. It stays in the DOM for screen readers, and
+     because seo.html builds <title> and og:title from page.title. */
+  .page__title {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    width: 1px !important;
+    border: 0 !important;
+    overflow: hidden;
+  }
+</style>
+
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
@@ -14,15 +28,10 @@ author_profile: true
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
       {% include archive-single.html %}
     {% endfor %}
   {% endfor %}

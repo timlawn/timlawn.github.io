@@ -95,7 +95,12 @@
 
   img {
     max-width: 175px;
-    border-radius: 50%;
+    /* Square, not oval. The source headshot is 852x949, so dropping the radius
+       alone would leave a rectangle - the aspect-ratio/object-fit pair crops it
+       to an actual square. */
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0;
 
     @include breakpoint($large) {
       padding: 5px;
