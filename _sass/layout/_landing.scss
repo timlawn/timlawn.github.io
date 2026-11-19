@@ -1,0 +1,244 @@
+/* ==========================================================================
+   LANDING PAGE
+   ========================================================================== */
+
+.landing {
+  --landing-text: #18222a;
+  --landing-muted: #5c6870;
+  --landing-faint: #8b969d;
+  --landing-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  color: var(--landing-text);
+  font-family: "IBM Plex Sans", $sans-serif;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+    text-underline-offset: 3px;
+
+    &:hover {
+      text-decoration-color: currentColor;
+    }
+  }
+}
+
+html[data-theme="dark"] .landing {
+  --landing-text: #ffffff;
+  --landing-muted: #d5d9dc;
+  --landing-faint: #b4bbc0;
+}
+
+/* Hero
+   ========================================================================== */
+
+.landing__hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.68fr) minmax(0, 1.32fr);
+  align-items: center;
+  gap: 1vw;
+  max-width: 1680px;
+  min-height: calc(100vh - #{$masthead-height});
+  min-height: calc(100svh - #{$masthead-height});
+  margin: 0 auto;
+  padding: 16px unquote("max(24px, 3vw)") 88px;
+}
+
+.landing__intro {
+  display: grid;
+  gap: 18px;
+}
+
+.landing__eyebrow {
+  margin: 0;
+  font: 500 12px/1 var(--landing-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--landing-faint);
+}
+
+.landing__name {
+  margin: 0;
+  font-family: inherit;
+  font-size: clamp(46px, 6.2vw, 96px);
+  line-height: 0.98;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: inherit;
+}
+
+.landing__role {
+  margin: 0;
+  font-size: clamp(17px, 1.5vw, 20px);
+  color: var(--landing-muted);
+}
+
+.landing__tagline {
+  margin: 6px 0 0;
+  max-width: 31ch;
+  font-size: clamp(19px, 1.9vw, 25px);
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+
+.landing__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    color: var(--landing-muted);
+  }
+}
+
+.landing__brain {
+  display: block;
+  margin: 0;
+
+  canvas {
+    display: block;
+    width: 100%;
+    height: unquote("min(78vh, 900px)");
+    touch-action: pan-y;
+    cursor: crosshair;
+  }
+}
+
+.landing__cue,
+.landing__label {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  font: 500 15px/1 var(--landing-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--landing-faint);
+
+  &::after {
+    content: "";
+    width: 1px;
+    height: 40px;
+    background: currentColor;
+    opacity: 0.7;
+  }
+}
+
+.landing .landing__cue {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  color: var(--landing-faint);
+  text-decoration: none;
+
+  &::after {
+    transform-origin: top;
+    animation: landing-cue 2.4s ease-in-out infinite;
+  }
+}
+
+@keyframes landing-cue {
+  0%, 100% { transform: scaleY(0.35); opacity: 0.5; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+
+/* About text
+   ========================================================================== */
+
+.landing__content {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 48px unquote("max(24px, 4vw)") 48px;
+  font-size: 17px;
+  line-height: 1.7;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  p {
+    margin: 0 0 1.1em;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .landing__label {
+    clear: both;
+    margin: 3.2em 0 1.6em;
+    padding: 0;
+    border: 0;
+  }
+}
+
+.landing__portrait {
+  float: right;
+  width: 260px;
+  margin: 6px 0 20px 36px;
+  border-radius: 6px;
+}
+
+.landing__content .reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Small screens
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .landing__hero {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+    gap: 8px;
+    padding-bottom: 32px;
+  }
+
+  .landing__brain {
+    order: -1;
+    margin-bottom: 28px;
+
+    canvas {
+      height: auto;
+      aspect-ratio: 940 / 764;
+    }
+  }
+
+  .landing__tagline {
+    max-width: none;
+  }
+
+  .landing .landing__cue {
+    display: none;
+  }
+
+  .landing__portrait {
+    width: 140px;
+    margin-left: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing .landing__cue::after {
+    animation: none;
+  }
+}
