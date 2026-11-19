@@ -1,16 +1,14 @@
 ---
 permalink: /
 title: "About Me"
+layout: landing
 excerpt: "Postdoctoral researcher at the University of Oxford studying how the brain's neuromodulatory systems shape cognition, consciousness, and disease."
-author_profile: true
+eyebrow: "Neuroscience · University of Oxford"
+tagline: "I study how the brain’s neuromodulatory systems shape cognition, consciousness and disease."
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-{% include brain-banner.html %}
-
-## Who I am
 
 I am a Wellcome trust early career research fellow at the University of Oxford, where I study how the neuromodulatory neurotransmitter systems shape brain networks and behaviour. My current work focuses on the roles of dopamine and serotonin in decision-making, combining fMRI with anatomicaly-targeted pharmacology in non-human primates.
 
@@ -20,7 +18,8 @@ I completed my PhD at the Center for Neuroimaging Sciences at King's College Lon
 
 When not doing neuroscience, thinking about neuroscience, or arguing about neuroscience at the pub, you can probably find me climbing, on a motorbike, or off on an adventure somewhere.
 
-## What I care about
+## Research interests
+{: .landing__label}
 
 I believe that the two most fundamental roles of science are to help us understand our place within the universe and to help those trying to survive within it. Consciousness remains one of the greatest unsolved scientific mysteries whilst disorders of the brain (spanning neuropsychiatric, neurodegenerative, and chronic pain) are amongst the greatest unmet needs within medicine. These joint motivations are what set me down the neuroscience path.
 
@@ -39,7 +38,8 @@ Because of this vast influence, they naturally bridge the scales I care about (f
 
 I'm always eager to discuss these ideas, explore potential collaborations, or generally chat over a pint (or coffee). Feel free to reach out!
 
-## In the Media
+## In the media
+{: .landing__label}
 
 **[Every patient is different, and so are their brains](https://www.ohbm-com.com/brain-bites/every-patient-is-different-and-so-are-their-brains)**  
 *OHBM Communications*

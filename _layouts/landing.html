@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+{% include base_path %}
+{% assign author = site.author %}
+
+<div class="landing" role="main">
+  <header class="landing__hero">
+    <div class="landing__intro">
+      {% if page.eyebrow %}<p class="landing__eyebrow">{{ page.eyebrow }}</p>{% endif %}
+      <h1 class="landing__name">{{ author.name }}</h1>
+      {% if author.bio %}<p class="landing__role">{{ author.bio }}</p>{% endif %}
+      {% if page.tagline %}<p class="landing__tagline">{{ page.tagline }}</p>{% endif %}
+      <ul class="landing__links">
+        {% if author.email %}<li><a href="mailto:{{ author.email }}">Email</a></li>{% endif %}
+        {% if author.googlescholar %}<li><a href="{{ author.googlescholar }}">Google Scholar</a></li>{% endif %}
+        {% if author.orcid %}<li><a href="{{ author.orcid }}">ORCID</a></li>{% endif %}
+        {% if author.researchgate %}<li><a href="{{ author.researchgate }}">ResearchGate</a></li>{% endif %}
+        {% if author.bluesky %}<li><a href="https://bsky.app/profile/{{ author.bluesky }}">Bluesky</a></li>{% endif %}
+        {% if author.linkedin %}<li><a href="https://www.linkedin.com/in/{{ author.linkedin }}">LinkedIn</a></li>{% endif %}
+      </ul>
+    </div>
+
+    <figure class="landing__brain">
+      <canvas id="neuromod-brain" role="img" aria-label="Animated network in the shape of a brain, with serotonin, noradrenaline, dopamine and acetylcholine nuclei sending activity through it"></canvas>
+    </figure>
+
+    <a class="landing__cue" href="#about">About</a>
+  </header>
+
+  <article id="about" class="landing__content">
+    {% if author.avatar %}
+      {% if author.avatar contains "://" %}{% assign avatar = author.avatar %}{% else %}{% assign avatar = author.avatar | prepend: "/images/" | prepend: base_path %}{% endif %}
+      <img class="landing__portrait" src="{{ avatar }}" alt="{{ author.name }}">
+    {% endif %}
+    {{ content }}
+  </article>
+</div>
+
+<script src="{{ base_path }}/assets/js/neuromod-brain.js"></script>
+<script src="{{ base_path }}/assets/js/landing.js"></script>
