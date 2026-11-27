@@ -1,0 +1,7 @@
+{%- assign me = site.author.citation_name -%}
+{%- if me -%}
+  {%- assign marked = '<span class="citation__me">' | append: me | append: '</span>' -%}
+  <span class="citation">{{ include.text | replace: me, marked }}</span>
+{%- else -%}
+  <span class="citation">{{ include.text }}</span>
+{%- endif -%}

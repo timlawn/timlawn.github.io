@@ -28,6 +28,7 @@ author:
   employer         : "University of Oxford"
   uri              : # URL
   email            : "tim.lawn@psy.ox.ac.uk" 
+  citation_name    : "Lawn, T." # highlighted in publication citations
 
   # Academic websites
   academia         : # URL

@@ -243,3 +243,14 @@
     }
   }
 }
+
+/* Citations: own name at full strength, co-authors slightly muted */
+
+.citation {
+  color: color-mix(in srgb, var(--global-text-color) 78%, var(--global-bg-color));
+}
+
+.citation__me {
+  color: var(--global-text-color);
+  font-weight: 700;
+}
